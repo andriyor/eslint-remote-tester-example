@@ -1,0 +1,13 @@
+{
+  "type": "module",
+  "scripts": {
+    "lint:remote": "eslint-remote-tester"
+  },
+  "devDependencies": {
+    "eslint": "^9.8.0",
+    "eslint-plugin-depend": "^0.9.0",
+    "eslint-plugin-unicorn": "^55.0.0",
+    "eslint-remote-tester": "^4.0.1"
+  }
+}
+  
