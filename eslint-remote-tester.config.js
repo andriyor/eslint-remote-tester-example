@@ -6,7 +6,8 @@ import eslintPluginUnicorn from 'eslint-plugin-unicorn';
 const config = {
     repositories: ['staeco/iris-ql'],
     extensions: ['js'],
-    eslintConfig: [depend.configs['flat/recommended'], eslintPluginUnicorn.configs['flat/recommended']],
+    rulesUnderTesting: (ruleId) => true,
+    eslintConfig: [depend.configs['flat/recommended']],
     pathIgnorePattern: `(${[
         'node_modules',
         '\\/\\.', // Any file or directory starting with dot, e.g. ".git"
